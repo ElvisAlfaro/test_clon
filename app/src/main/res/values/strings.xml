@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DialogAlert</string>
+
+    <string name="message"><![CDATA[Recuerda que debes de comentarle al cliente que estamos guardando sus datos para poder contactarnos con él en el futuro. <br></br> <br></br> <br></br>
+    <b>¿El cliente aprobó el uso de su información?</b>]]></string>
+    <string name="abrir_dialog">abrir dialog</string>
+    <string name="tasa">tasa</string>
+    <string name="_10">10</string>
+</resources>

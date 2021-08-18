@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:prefixText="S/"
+        app:suffixText="%"
+        app:hintTextColor="@android:color/holo_green_dark">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/tasa"
+            android:text="@string/_10"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.example.dialogalert.custom_view.CustomInputType
+        android:id="@+id/cit_valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:background="@color/purple_200"
+        app:type="porcentaje"
+        app:hint="Saldo"/>
+
+    <com.example.dialogalert.custom_view.CustomInputType
+        android:id="@+id/cit_valor2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:background="@color/design_default_color_primary_dark"
+        app:type="moneda_sol"
+        app:hint="Monto"
+        app:text="10"
+        app:editable="false"/>
+
+    <Button
+        android:id="@+id/btn_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/abrir_dialog"
+        android:layout_gravity="center" />
+
+</LinearLayout>

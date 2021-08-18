@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomInputType">
+        <attr name="type">
+            <flag name="porcentaje" value="1"/>
+            <flag name="moneda_sol" value="2"/>
+            <flag name="moneda_dolar" value="3"/>
+        </attr>
+        <attr name="hint" format="string"/>
+        <attr name="hint_color" format="color"/>
+        <attr name="text" format="string"/>
+        <attr name="textColor" format="color"/>
+        <attr name="max_decimal" format="integer"/>
+        <attr name="background" format="reference"/>
+        <attr name="editable" format="boolean"/>
+    </declare-styleable>
+</resources>

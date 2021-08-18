@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#B356565C">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guide_left"
+        app:layout_constraintEnd_toEndOf="@+id/guide_right">
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_person"
+            android:layout_marginTop="28dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guide_border_left"
+            app:layout_constraintEnd_toEndOf="@+id/guide_border_right" />
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Custom view ....."
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="27dp"
+            android:gravity="center_horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logo"
+            app:layout_constraintStart_toStartOf="@+id/guide_border_left"
+            app:layout_constraintEnd_toEndOf="@+id/guide_border_right"/>
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="No, cancelar"
+            android:textAllCaps="false"
+            android:textColor="#009530"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_message"
+            app:layout_constraintStart_toStartOf="@id/guide_border_left"/>
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textColor="#009530"
+            android:text="Si, agregar"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_message"
+            app:layout_constraintEnd_toEndOf="@id/guide_border_right"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_border_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_border_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
